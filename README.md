@@ -97,7 +97,7 @@ The Data Flows transformations used are:
 ### Cases and Deaths transformation
 ![image](https://github.com/user-attachments/assets/6638af9e-eab3-43e0-a2d1-06d266cdd0c7)
 
-<strong> Steps <\strong>:
+<strong> Steps </strong>:
 
 Cases And Deaths Source (Azure Data Lake Storage Gen2 ) <br>
 Filter Europe-Only Data <br>
