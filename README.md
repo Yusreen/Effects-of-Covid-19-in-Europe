@@ -94,6 +94,20 @@ The Data Flows transformations used are:
 - Derived columns transformation
 - Sink transformation
 
+### Cases and Deaths transformation
+![image](https://github.com/user-attachments/assets/6638af9e-eab3-43e0-a2d1-06d266cdd0c7)
+
+<strong> Steps <\strong>:
+
+Cases And Deaths Source (Azure Data Lake Storage Gen2 ) <br>
+Filter Europe-Only Data <br>
+Select only the required columns <br>
+PivotCounts using indicator Columns(confirmed cases, deaths) and get the sum of daily cases count <br>
+Lookup Country to get country_code_2_digit,country_code_3_digit columns <br>
+Select Only the required columns for the Sink <br>
+Create a Sink dataset (Azure Data Lake Storage Gen2) <br>
+Used Schedule Trigger <br>
+
 ## Visualization
 
 
