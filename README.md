@@ -50,6 +50,10 @@ Check metadata counts before loading the data using the IF Condition <br>
 Load Data into our destination <br>
 ScheduleTrigger <br>
 
+### Ingesting ECDC Data
+The confirmed cases, Mortality, Hospitalization/ICU cases, Testing numbers data are read from the github repo.
+![image](https://github.com/user-attachments/assets/ebfce600-7bd7-4c22-9f6a-1773b66004bf)
+
 
 ## Transfromation
 
