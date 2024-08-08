@@ -31,7 +31,7 @@ datasets: https://github.com/cloudboxacademy/covid19.
 
 ## Ingestion  
 ### Ingesting the Population data
-The population data is ingested as a .csv file to a blob storage. It is then transfered to the ADLS Gen 2 using linked services.
+The population data is ingested as a .tsv.gz file to a blob storage. 
 
 ![image](https://github.com/user-attachments/assets/97027d6b-668b-4a86-986d-0999c7d72e36)
 
