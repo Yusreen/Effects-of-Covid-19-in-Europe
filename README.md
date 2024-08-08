@@ -20,16 +20,19 @@ datasets: https://github.com/cloudboxacademy/covid19.
 ![image](https://github.com/user-attachments/assets/9c7a7905-b1b7-4c06-877e-f4fe2a88cee6)
 
 ## Environment Set-up
-<pre> AZURE Subscription </pre>
-<pre> Data Factory </pre>
-<pre> Blob Storage </pre> 
-<pre> Data Lake Storage GEN 2 </pre>
-<pre> AZURE SQL Database </pre>
-<pre> AZURE databricks </pre>
-<pre> HD Insight cluster </pre>
+ AZURE Subscription <br>
+ Data Factory <br>
+ Blob Storage <br>
+ Data Lake Storage GEN 2 <br>
+ AZURE SQL Database <br>
+ AZURE databricks <br>
+ HD Insight cluster <br>
 
 
 ## Ingestion  
+# Ingesting the population data
+The population data is ingested as a .csv file to a blob storage. It is then transfered to the ADLS Gen 2 using linked services.
+![image](https://github.com/user-attachments/assets/97027d6b-668b-4a86-986d-0999c7d72e36)
 
 
 
