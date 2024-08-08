@@ -108,7 +108,11 @@ Select Only the required columns for the Sink <br>
 Create a Sink dataset (Azure Data Lake Storage Gen2) <br>
 Used Schedule Trigger <br>
 
- ![image](https://github.com/user-attachments/assets/aec51216-3240-41aa-a4c6-4bc33a58bb5c)
+### Data flow pipeline for Cases and Deaths
+![image](https://github.com/user-attachments/assets/2f14f3df-b6fe-4472-87c6-422e2e93abe1)
+
+
+
 
 
  ### Hospital Admissions transformation
@@ -135,7 +139,8 @@ Used Schedule Trigger <br>
 - Select only required columns for sink
 - Create a sink dataset (Azure Data Lake Storage Gen2)
 - Used Schedule Trigger
-
+### Data flow pipelien for Hospital Admissions
+ ![image](https://github.com/user-attachments/assets/aec51216-3240-41aa-a4c6-4bc33a58bb5c)
 ### Population data transformation
 ![image](https://github.com/user-attachments/assets/4500ca70-de07-42f7-a2a3-11d7d2cb304c)
 
