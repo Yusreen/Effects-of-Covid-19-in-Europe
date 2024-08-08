@@ -1,8 +1,8 @@
-# Effects of Covid-19 in Europe (An Azure Data Engineering project)
+# Effects of COVID-19 in Europe (An Azure Data Engineering project)
 This project looks at datasets to study the overall effect of Covid-19 in Europe in 2020.
 
 ## Goal of the project
-The goal is to visualize the death count, admission count as well as the vaccination count per country in Europe. The project also attempts to find the link between confirmed cases
+The goal is to visualize the death count, admission, and vaccination count per country in Europe. The project also attempts to find the link between confirmed cases
 and Covid-19 vaccines.
 
 ![image](https://github.com/user-attachments/assets/618d7296-7e72-402e-ac96-52183cbae643)
@@ -13,7 +13,7 @@ Data is ingested from 2 sources:
 1. ECDC website to extract: Confirmed cases, Mortality, Hospitalization/ICU cases, Testing numbers
 2. Eurostat website to extract Population by age
 
-We started out with the intention of reading the data from the website itself. However, due to the new permission barrier, the course instructor created a gitbub repo for the 
+We started by reading the data from the website itself. However, due to the new permission barrier, the course instructor created a GitHub repo for the 
 datasets: https://github.com/cloudboxacademy/covid19.
 
 ## Solution Architecture
@@ -25,13 +25,13 @@ datasets: https://github.com/cloudboxacademy/covid19.
  Blob Storage <br>
  Data Lake Storage GEN 2 <br>
  AZURE SQL Database <br>
- AZURE databricks <br>
+ AZURE Databricks <br>
  HD Insight cluster <br>
 
 
 ## Ingestion  
 ### Ingesting the Population data
-The population data is ingested as a .tsv.gz file to a blob storage. 
+The population data is ingested as a .tsv.gz file and stored in a blob storage. 
 
 ![image](https://github.com/user-attachments/assets/97027d6b-668b-4a86-986d-0999c7d72e36)
 
@@ -51,7 +51,7 @@ Load Data into our destination <br>
 ScheduleTrigger <br>
 
 ### Ingesting ECDC Data
-The confirmed cases, Mortality, Hospitalization/ICU cases, Testing numbers data are read from the github repo.
+The confirmed cases, Mortality, Hospitalization/ICU cases, and Testing numbers data are read from the GitHub repo.
 
 The files ingested are as follows:
 
@@ -72,24 +72,24 @@ Create a Source Data Set <br>
 Create a Linked Service To Azure Data Lake storage (GEN2) <br>
 Create a Sink Data set <br>
 Create a Pipeline With Parameters & Variables <br>
-Lookup to get all the parameters from json file, then pass it to ForEach ECDC DATA as shown below <br>
+Lookup to get all the parameters from the JSON file, then pass it to ForEach ECDC DATA as shown below <br>
 Schedule Trigger <br>
 
-### The json file:
+### The JSON file:
 ![image](https://github.com/user-attachments/assets/951e6585-0d65-4baf-9338-3c38d787acd9)
 
 
 ## Transformation
-To transform the Cases and Deaths data as well as the hospital admissions data, ADF dataflows were used.
-To transform the Population data, Databricks was used.
+ADF dataflows were used to transform the Cases and Deaths data as well as the hospital admissions data,
+Databricks was used to transform the Population data.
 
 The Data Flows transformations used are:
 
 - Select transformation
 - Lookup transformation
-- Filter transformation
+- Filter Transformation
 - Join transformation
-- Sort transformation
+- Sort Transformation
 - Conditional split transformation
 - Derived columns transformation
 - Sink transformation
@@ -130,16 +130,16 @@ Used Schedule Trigger <br>
 - Join with Date to get ecdc_Year_week, week_start_date, week_End_date
 - Pivot Counts using indicator Columns(confirmed cases, deaths) and get the sum of daily cases count
 - Sort data using reported_year_week ASC and Country DESC
-- Select only required columns for sink
+- Select only the required columns for the sink
 - Create a sink dataset (Azure Data Lake Storage Gen2)
 - Schedule Trigger
 7. For Daily Path <br>
 - Pivot Counts using indicator Columns(confirmed cases, deaths) and get the sum of daily cases count
 - Sort Data using reported_year_week ASC and Country DESC
-- Select only required columns for sink
+- Select only the required columns for the sink
 - Create a sink dataset (Azure Data Lake Storage Gen2)
 - Used Schedule Trigger
-### Data flow pipelien for Hospital Admissions
+### Data flow pipeline for Hospital Admissions
  ![image](https://github.com/user-attachments/assets/aec51216-3240-41aa-a4c6-4bc33a58bb5c)
 ### Population data transformation
 ![image](https://github.com/user-attachments/assets/4500ca70-de07-42f7-a2a3-11d7d2cb304c)
@@ -153,8 +153,8 @@ The link to the dashboard can be found here: https://app.powerbi.com/view?r=eyJr
 - Applied Knowledge about ingesting files from HTTPS and locally
 - Understood the difference between Data Warehouse and Data Lake
 - Understood how to use transformations such as SELECT, LOOKUP, FILTER, JOIN, SORT, CONDITIONAL  SPLIT TRANSFORMATION, DERIVED COLUMNS, SINK TRANSFORMATION
-- Learnt how to write scripts in python to mount storage and perfrom transformations using Dataframes.
-- Learnt how to create tables in SQL as well populate them in ADF
+- Learnt how to write scripts in Python to mount storage and perform transformations using Dataframes.
+- Learnt how to create tables in SQL as well as populate them in ADF
 
 ## Resources
 https://www.udemy.com/course/learn-azure-data-factory-from-scratch/learn/lecture/23983360#announcements <br>
