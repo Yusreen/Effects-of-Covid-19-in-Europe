@@ -135,11 +135,18 @@ Used Schedule Trigger <br>
 - Create a sink dataset (Azure Data Lake Storage Gen2)
 - Used Schedule Trigger
 
+### Population data transformation
+![image](https://github.com/user-attachments/assets/4500ca70-de07-42f7-a2a3-11d7d2cb304c)
+
+
 ## Visualization
 
+The link to the dashboard can be found here: https://app.powerbi.com/view?r=eyJrIjoiYjBhYWU0NTItMmVhOS00MGM5LTk1ZGEtMTQxZTdmZDUxMWUwIiwidCI6ImUwYjlhZTFlLWViMjYtNDZhOC1hZGYyLWQ3ZGJjZjIzNDBhOSJ9
 
 
-
+## Resources
+https://www.udemy.com/course/learn-azure-data-factory-from-scratch/learn/lecture/23983360#announcements <br>
+https://github.com/hbuddana/Azure_Data_Factory_COVID-19_Reporting?tab=readme-ov-file#azure-data-factory-covid-19-reporting
 
 
 
