@@ -54,8 +54,26 @@ ScheduleTrigger <br>
 The confirmed cases, Mortality, Hospitalization/ICU cases, Testing numbers data are read from the github repo.
 ![image](https://github.com/user-attachments/assets/ebfce600-7bd7-4c22-9f6a-1773b66004bf)
 
+### Solution flow for the ECDC Data
+![image](https://github.com/user-attachments/assets/feed5b9f-4964-4801-b200-f1c43db5c61f)
 
-## Transfromation
+Steps:
+
+Create a Linked Service using an HTTP connector <br>
+Create a Source Data Set <br>
+Create a Linked Service To Azure Data Lake storage (GEN2) <br>
+Create a Sink Data set <br>
+Create a Pipeline With Parameters & Variables <br>
+Lookup to get all the parameters from json file, then pass it to ForEach ECDC DATA as shown below <br>
+Schedule Trigger <br>
+
+### The json file is as follows:
+![image](https://github.com/user-attachments/assets/951e6585-0d65-4baf-9338-3c38d787acd9)
+
+
+
+
+## Transformation
 
 ## Visualization
 
