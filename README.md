@@ -30,10 +30,25 @@ datasets: https://github.com/cloudboxacademy/covid19.
 
 
 ## Ingestion  
-# Ingesting the population data
+# Ingesting the Population data
 The population data is ingested as a .csv file to a blob storage. It is then transfered to the ADLS Gen 2 using linked services.
+
 ![image](https://github.com/user-attachments/assets/97027d6b-668b-4a86-986d-0999c7d72e36)
 
+# Solution flow for Population data
+![image](https://github.com/user-attachments/assets/3d766c74-3527-4fc5-bd21-a797b5d301e5)
+
+Steps:
+
+Create a Linked Service To Azure Blob Storage <br>
+Create a Source Data Set <br>
+Create a Linked Service To Azure Data Lake storage (GEN2) <br>
+Create a Sink Data set <br>
+Create a Pipeline: <br>
+Execute Copy activity when the file becomes available<br>
+Check metadata counts before loading the data using the IF Condition <br>
+Finally Load Data into our destination <br>
+ScheduleTrigger <br>
 
 
 ## Transfromation
