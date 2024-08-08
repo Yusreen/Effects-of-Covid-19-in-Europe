@@ -108,6 +108,33 @@ Select Only the required columns for the Sink <br>
 Create a Sink dataset (Azure Data Lake Storage Gen2) <br>
 Used Schedule Trigger <br>
 
+ # Insert the pipeline picture here
+
+ ### Hospital Admissions transformation
+ ![image](https://github.com/user-attachments/assets/8f066a71-c3ce-455d-9015-f3e7e786a0b4)
+
+ <strong> Steps </strong>
+1. Hospital Admissions Source (Azure Data Lake Storage Gen2 ) <br>
+2. Select only the required columns<br>
+3. Lookup Country to get country_code_2_digit,country_code_3_digit columns<br>
+4. Select only the required columns<br>
+5. Condition Split Weekly, Daily Split condition<br>
+- indicator=='Weekly new hospital admissions per 100k' || indicator=='Weekly new ICU admissions per 100k'
+- indicator== "Daily hospital occupancy" || indicator=="Daily ICU occupancy"
+6. For Weekly Path <br>
+- Join with Date to get ecdc_Year_week, week_start_date, week_End_date
+- Pivot Counts using indicator Columns(confirmed cases, deaths) and get the sum of daily cases count
+- Sort data using reported_year_week ASC and Country DESC
+- Select only required columns for sink
+- Create a sink dataset (Azure Data Lake Storage Gen2)
+- Schedule Trigger
+7. For Daily Path <br>
+- Pivot Counts using indicator Columns(confirmed cases, deaths) and get the sum of daily cases count
+- Sort Data using reported_year_week ASC and Country DESC
+- Select only required columns for sink
+- Create a sink dataset (Azure Data Lake Storage Gen2)
+- Used Schedule Trigger
+
 ## Visualization
 
 
