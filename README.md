@@ -1,9 +1,9 @@
 # Effects of COVID-19 in Europe (An Azure Data Engineering project)
-This project looks at datasets to study the overall effect of Covid-19 in Europe in 2020.
+This project looks at datasets to study the overall effect of COVID-19 in Europe in 2020.
 
 ## Goal of the project
 The goal is to visualize the death count, admission, and vaccination count per country in Europe. The project also attempts to find the link between confirmed cases
-and Covid-19 vaccines.
+and COVID-19 vaccines.
 
 ![image](https://github.com/user-attachments/assets/618d7296-7e72-402e-ac96-52183cbae643)
 
