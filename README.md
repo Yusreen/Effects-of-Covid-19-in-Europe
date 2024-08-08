@@ -52,6 +52,14 @@ ScheduleTrigger <br>
 
 ### Ingesting ECDC Data
 The confirmed cases, Mortality, Hospitalization/ICU cases, Testing numbers data are read from the github repo.
+
+The files ingested are as follows:
+
+Case & Deaths Data.csv <br>
+Hospital Admission Data.csv <br>
+testing.csv <br>
+country_response.csv <br>
+
 ![image](https://github.com/user-attachments/assets/ebfce600-7bd7-4c22-9f6a-1773b66004bf)
 
 ### Solution flow for the ECDC Data
@@ -67,13 +75,24 @@ Create a Pipeline With Parameters & Variables <br>
 Lookup to get all the parameters from json file, then pass it to ForEach ECDC DATA as shown below <br>
 Schedule Trigger <br>
 
-### The json file is as follows:
+### The json file:
 ![image](https://github.com/user-attachments/assets/951e6585-0d65-4baf-9338-3c38d787acd9)
 
 
-
-
 ## Transformation
+To transform the Cases and Deaths data as well as the hospital admissions data, ADF dataflows were used.
+To transform the Population data, Databricks was used.
+
+The Data Flows transformations used are:
+
+- Select transformation
+- Lookup transformation
+- Filter transformation
+- Join transformation
+- Sort transformation
+- Conditional split transformation
+- Derived columns transformation
+- Sink transformation
 
 ## Visualization
 
