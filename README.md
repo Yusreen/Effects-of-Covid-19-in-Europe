@@ -1,4 +1,4 @@
-# Effects-of-Covid-19-in-Europe (An Azure Data Engineering project)
+# Effects of Covid-19 in Europe (An Azure Data Engineering project)
 This project looks at datasets to study the overall effect of Covid-19 in Europe in 2020.
 
 ## Goal of the project
