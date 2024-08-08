@@ -20,12 +20,12 @@ datasets: https://github.com/cloudboxacademy/covid19.
 ![image](https://github.com/user-attachments/assets/9c7a7905-b1b7-4c06-877e-f4fe2a88cee6)
 
 ## Environment Set-up
-AZURE Subscription
-Data Factory
-Blob Storage
-Data Lake Storage GEN 2
-AZURE SQL Database
-AZURE databricks
+AZURE Subscription //
+Data Factory //
+Blob Storage //
+Data Lake Storage GEN 2 //
+AZURE SQL Database //
+AZURE databricks //
 HD Insight cluster
 
 
