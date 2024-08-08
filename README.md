@@ -149,6 +149,12 @@ Used Schedule Trigger <br>
 
 The link to the dashboard can be found here: https://app.powerbi.com/view?r=eyJrIjoiYjBhYWU0NTItMmVhOS00MGM5LTk1ZGEtMTQxZTdmZDUxMWUwIiwidCI6ImUwYjlhZTFlLWViMjYtNDZhOC1hZGYyLWQ3ZGJjZjIzNDBhOSJ9
 
+## Learning outcomes
+- Applied Knowledge about ingesting files from HTTPS and locally
+- Understood the difference between Data Warehouse and Data Lake
+- Understood how to use transformations such as SELECT, LOOKUP, FILTER, JOIN, SORT, CONDITIONAL  SPLIT TRANSFORMATION, DERIVED COLUMNS, SINK TRANSFORMATION
+- Learnt how to write scripts in python to mount storage and perfrom transformations using Dataframes.
+- Learnt how to create tables in SQL as well populate them in ADF
 
 ## Resources
 https://www.udemy.com/course/learn-azure-data-factory-from-scratch/learn/lecture/23983360#announcements <br>
