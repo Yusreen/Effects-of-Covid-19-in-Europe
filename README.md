@@ -6,7 +6,7 @@ The goal is to visualize the death count, admission, and vaccination count per c
 and COVID-19 vaccines.
 
 ![image](https://github.com/user-attachments/assets/618d7296-7e72-402e-ac96-52183cbae643)
-
+See the results here:  https://app.powerbi.com/view?r=eyJrIjoiYjBhYWU0NTItMmVhOS00MGM5LTk1ZGEtMTQxZTdmZDUxMWUwIiwidCI6ImUwYjlhZTFlLWViMjYtNDZhOC1hZGYyLWQ3ZGJjZjIzNDBhOSJ9
 
 ## Dataset
 Data is ingested from 2 sources:
